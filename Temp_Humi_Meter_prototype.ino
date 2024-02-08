@@ -8,8 +8,8 @@
 /***********************************************************************
 Library
 ***********************************************************************/
-//#include <Wire.h>           //I2C用のライブラリ LCDのライブラリに含まれるためコメントアウト
-#include <DHT.h>  //https://github.com/adafruit/DHT-sensor-library
+//#include <Wire.h>             //I2C用のライブラリ LCDのライブラリに含まれるためコメントアウト
+#include <DHT.h>                //https://github.com/adafruit/DHT-sensor-library
 #include <LiquidCrystal_I2C.h>  //https://github.com/johnrickman/LiquidCrystal_I2C
 
 /***********************************************************************
@@ -23,8 +23,8 @@ LiquidCrystal_I2C lcd(0x27, 20, 4);  //LCDのI2Cアドレスと表示領域を�
 
 
 /*グローバル変数　*/ // !!!!!アクセスの制限や手順が無く、意図しない動作を起こしやすい。ポインタで実装できるようにしたい
-float Humidity                  = 0.00;            //動作確認のため極端な数値
-float Temperature               = 0.00;            //動作確認のため極端な数値
+float Humidity                  = 0.00;
+float Temperature               = 0.00;
 
 unsigned long SetUpTime         = 0;
 unsigned long RequestTiming     = 0;
